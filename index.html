@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="src/index.css"> -->
+  <title>Dates for renewals</title>
+</head>
+
+<body>
+  <div id="app"
+    class="flex flex-col items-center justify-between py-8 text-center text-[#2c3e50] selection:bg-green-100 mx-2">
+    <div>
+      <h1
+        class="bg-gradient-to-r from-green-600 to-sky-400 bg-clip-text text-5xl font-black text-transparent selection:bg-transparent">
+        Hello !
+      </h1>
+      <h3 class="my-4 text-2xl font-bold text-gray-500">
+        Calculate dates for renewals
+      </h3>
+    </div>
+
+
+    <div class="container ">
+      <div class="flex lg:flex-row flex-col  my-3 text-base items-start">
+        <div class="lg:basis-1/6 lg:px-2 basis-1/2 my-3 text-left">
+          <label for="date1" class="font-sm font-bold lg:pl-2 pl-0">
+            Last update date
+          </label>
+          <input id="date1" type="date" class="rounded text-pink-500 form-control" />
+        </div>
+        <div class="lg:basis-1/6 lg:px-2 basis-1/2 my-3 text-left">
+          <label for="date2" class="font-sm font-bold lg:pl-2 pl-0">
+            Target date
+          </label>
+          <input id="date2" type="date" class="rounded text-pink-500 form-control" />
+        </div>
+        <div class="lg:basis-1/6 lg:px-2 basis-1/2 my-3 text-left">
+          <p for="date2" class="font-sm font-bold lg:pl-2 pl-0">
+            Possible durations
+          </p>
+          <p class="text-blue-600 font-bold">
+            30, 60, 90, 120, 240, 365
+          </p>
+        </div>
+        <div class="lg:basis-1/6 lg:px-2 basis-1/2 my-3 text-left">
+          <p for="date2" class="font-sm font-bold lg:pl-2 pl-0">
+            Allowed early
+          </p>
+          <p class="text-blue-600 font-bold">
+            <span id="allowed-early">15</span> days
+          </p>
+        </div>
+        <div class="lg:basis-1/6 lg:px-2 basis-1/2 my-3 text-left">
+          <button class="normbtn" id="calculate">
+            Calculate
+          </button>
+        </div>
+      </div>
+      <div class="flex lg:flex-row flex-col  my-3 text-base items-start">
+        <div class="lg:basis-1/2 lg:px-2 basis-full my-3 text-left">
+          <div id="result">
+            <p class=""></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
